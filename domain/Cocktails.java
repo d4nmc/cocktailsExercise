@@ -1,22 +1,22 @@
 package domain;
 
 public class Cocktails {
-	public String cocktailName;
-	public String theBase;
-	public String theModifier;
-	public String theFlavouring;
-	public double theCost;
-	public boolean over18;
+	private String cocktailName;
+	private String theBase;
+	private String theModifier;
+	private String theFlavouring;
+	private double theCost;
+	private boolean over18;
 	
 	public Cocktails(String cocktailName, String theBase, String theModifier, String theFlavouring, double theCost,
-			boolean fancyGlass) {
+			boolean over18) {
 		super();
 		this.cocktailName = cocktailName;
 		this.theBase = theBase;
 		this.theModifier = theModifier;
 		this.theFlavouring = theFlavouring;
 		this.theCost = theCost;
-		this.over18 = fancyGlass;
+		this.over18 = over18;
 	}
 
 	public String getCocktailName() {
@@ -59,12 +59,12 @@ public class Cocktails {
 		this.theCost = theCost;
 	}
 
-	public boolean isFancyGlass() {
+	public boolean isOver18() {
 		return over18;
 	}
 
-	public void setFancyGlass(boolean fancyGlass) {
-		this.over18 = fancyGlass;
+	public void setOver18(boolean over18) {
+		this.over18 = over18;
 	}
 	
 	

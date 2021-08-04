@@ -5,32 +5,36 @@ package cocktailsOrder;
 import domain.Cocktails;
 
 public class Runner {
+	
 	public static void main(String[] args) {
 		
+// The cocktails I am creating
 		Cocktails newCocktail = new Cocktails("Dark N' Stormy", "50ml Dark Rum", "Ginger Ale", "Fresh Lime", 14.00, true);
 		Cocktails newCocktail2 = new Cocktails("Long Island Ice Tea", "15ml Light Rum + 15ml Gin + 15ml Vodka + 15ml Tequila + 15ml Triple Sec", "Coke", "Sours Mix", 18.00, true);
 		Cocktails newCocktail3 = new Cocktails("Sex on the Beach", "50ml Vodka + 30ml Peach Schnapps", "50ml Orange Juice + 50ml Cranberry Juice ", "Orange Slice", 20.00, true);
 		
+// The Printouts For console		
+		
 		System.out.println("==========Cocktail Number 1==========");
-		System.out.println(newCocktail.cocktailName);
-		System.out.println(newCocktail.theBase);
-		System.out.println(newCocktail.theModifier);
-		System.out.println(newCocktail.theFlavouring);
-		System.out.println(newCocktail.theCost);
-		System.out.println(newCocktail.over18);
+		System.out.println(newCocktail.getCocktailName());
+		System.out.println(newCocktail.getTheBase());
+		System.out.println(newCocktail.getTheModifier());
+		System.out.println(newCocktail.getTheFlavouring());
+		System.out.println(newCocktail.getTheCost());
+		System.out.println(newCocktail.isOver18());
 		System.out.println("==========Cocktail Number 2==========");
-		System.out.println(newCocktail2.cocktailName);
-		System.out.println(newCocktail2.theBase);
-		System.out.println(newCocktail2.theModifier);
-		System.out.println(newCocktail2.theFlavouring);
-		System.out.println(newCocktail2.theCost);
-		System.out.println(newCocktail2.over18);
+		System.out.println(newCocktail2.getCocktailName());
+		System.out.println(newCocktail2.getTheBase());
+		System.out.println(newCocktail2.getTheModifier());
+		System.out.println(newCocktail2.getTheFlavouring());
+		System.out.println(newCocktail2.getTheCost());
+		System.out.println(newCocktail2.isOver18());
 		System.out.println("==========Cocktail Number 3==========");
-		System.out.println(newCocktail3.cocktailName);
-		System.out.println(newCocktail3.theBase);
-		System.out.println(newCocktail3.theModifier);
-		System.out.println(newCocktail3.theFlavouring);
-		System.out.println(newCocktail3.theCost);
-		System.out.println(newCocktail3.over18);
+		System.out.println(newCocktail3.getCocktailName());
+		System.out.println(newCocktail3.getTheBase());
+		System.out.println(newCocktail3.getTheModifier());
+		System.out.println(newCocktail3.getTheFlavouring());
+		System.out.println(newCocktail3.getTheCost());
+		System.out.println(newCocktail3.isOver18());
 	}
 }
