@@ -7,7 +7,7 @@ public class Cocktails {
 	private String theFlavouring;
 	private double theCost;
 	private boolean over18;
-	
+
 	public Cocktails(String cocktailName, String theBase, String theModifier, String theFlavouring, double theCost,
 			boolean over18) {
 		super();
@@ -40,7 +40,11 @@ public class Cocktails {
 	}
 
 	public void setTheModifier(String theModifier) {
-		this.theModifier = theModifier;
+		if (theModifier == "Cream") {
+			System.out.println("Get outta town you disgusting person!");
+		} else {
+			this.theModifier = theModifier;
+		}
 	}
 
 	public String getTheFlavouring() {
@@ -66,6 +70,5 @@ public class Cocktails {
 	public void setOver18(boolean over18) {
 		this.over18 = over18;
 	}
-	
-	
+
 }

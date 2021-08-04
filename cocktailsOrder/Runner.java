@@ -1,5 +1,8 @@
 package cocktailsOrder;
 
+import java.util.ArrayList;
+import java.util.List;
+
 // ADDED PACKAGE TO GITHUB
 
 import domain.Cocktails;
@@ -12,7 +15,11 @@ public class Runner {
 		Cocktails newCocktail = new Cocktails("Dark N' Stormy", "50ml Dark Rum", "Ginger Ale", "Fresh Lime", 14.00, true);
 		Cocktails newCocktail2 = new Cocktails("Long Island Ice Tea", "15ml Light Rum + 15ml Gin + 15ml Vodka + 15ml Tequila + 15ml Triple Sec", "Coke", "Sours Mix", 18.00, true);
 		Cocktails newCocktail3 = new Cocktails("Sex on the Beach", "50ml Vodka + 30ml Peach Schnapps", "50ml Orange Juice + 50ml Cranberry Juice ", "Orange Slice", 20.00, true);
-		
+		Cocktails newCocktail4 = new Cocktails("White Russian", "50ml Vodka + 25m Coffee Liqueur", "Cream", "Ice", 2.00, true);
+
+// Creating an array list for cocktails		
+		List<Cocktails> cocktailList = new ArrayList<>();
+				
 // The Printouts For console		
 		
 		System.out.println("==========Cocktail Number 1==========");
@@ -36,5 +43,12 @@ public class Runner {
 		System.out.println(newCocktail3.getTheFlavouring());
 		System.out.println(newCocktail3.getTheCost());
 		System.out.println(newCocktail3.isOver18());
+		System.out.println("==========Cocktail Number 4==========");
+		System.out.println(newCocktail4.getCocktailName());
+		System.out.println(newCocktail4.getTheBase());
+		System.out.println(newCocktail4.getTheModifier());
+		System.out.println(newCocktail4.getTheFlavouring());
+		System.out.println(newCocktail4.getTheCost());
+		System.out.println(newCocktail4.isOver18());
 	}
 }
